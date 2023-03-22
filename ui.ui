@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>600</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <widget class="QPushButton" name="X1">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>200</width>
+      <height>200</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="mouseTracking">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #DA48F0, stop:1 #5F006E);
+    border-style: solid;
+    border-width: 2px;
+    border-color: #5F006E;
+    border-radius: 10px;
+    color: #F0ACEB;
+    font-size: 18px;
+    padding: 10px;
+}
+QPushButton:hover {
+    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #D34BED, stop:1 #67004D);
+    border-color: #67004D;
+}
+QPushButton:pressed {
+    background-color: #5F006E;
+    border-color: #5F006E;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="X2">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>0</y>
+      <width>200</width>
+      <height>200</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>-1</pointsize>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #DA48F0, stop:1 #5F006E);
+    border-style: solid;
+    border-width: 2px;
+    border-color: #5F006E;
+    border-radius: 10px;
+    color: #F0ACEB;
+    font-size: 18px;
+    padding: 10px;
+}
+QPushButton:hover {
+    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #D34BED, stop:1 #67004D);
+    border-color: #67004D;
+}
+QPushButton:pressed {
+    background-color: #5F006E;
+    border-color: #5F006E;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="X3">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>0</y>
+      <width>200</width>
+      <height>200</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #DA48F0, stop:1 #5F006E);
+    border-style: solid;
+    border-width: 2px;
+    border-color: #5F006E;
+    border-radius: 10px;
+    color: #F0ACEB;
+    font-size: 18px;
+    padding: 10px;
+}
+QPushButton:hover {
+    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #D34BED, stop:1 #67004D);
+    border-color: #67004D;
+}
+QPushButton:pressed {
+    background-color: #5F006E;
+    border-color: #5F006E;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Y1">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>200</y>
+      <width>200</width>
+      <height>200</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #DA48F0, stop:1 #5F006E);
+    border-style: solid;
+    border-width: 2px;
+    border-color: #5F006E;
+    border-radius: 10px;
+    color: #F0ACEB;
+    font-size: 18px;
+    padding: 10px;
+}
+QPushButton:hover {
+    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #D34BED, stop:1 #67004D);
+    border-color: #67004D;
+}
+QPushButton:pressed {
+    background-color: #5F006E;
+    border-color: #5F006E;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Y2">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>200</y>
+      <width>200</width>
+      <height>200</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #DA48F0, stop:1 #5F006E);
+    border-style: solid;
+    border-width: 2px;
+    border-color: #5F006E;
+    border-radius: 10px;
+    color: #F0ACEB;
+    font-size: 18px;
+    padding: 10px;
+}
+QPushButton:hover {
+    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #D34BED, stop:1 #67004D);
+    border-color: #67004D;
+}
+QPushButton:pressed {
+    background-color: #5F006E;
+    border-color: #5F006E;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Y3">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>200</y>
+      <width>200</width>
+      <height>200</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #DA48F0, stop:1 #5F006E);
+    border-style: solid;
+    border-width: 2px;
+    border-color: #5F006E;
+    border-radius: 10px;
+    color: #F0ACEB;
+    font-size: 18px;
+    padding: 10px;
+}
+QPushButton:hover {
+    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #D34BED, stop:1 #67004D);
+    border-color: #67004D;
+}
+QPushButton:pressed {
+    background-color: #5F006E;
+    border-color: #5F006E;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Z1">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>400</y>
+      <width>200</width>
+      <height>200</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #DA48F0, stop:1 #5F006E);
+    border-style: solid;
+    border-width: 2px;
+    border-color: #5F006E;
+    border-radius: 10px;
+    color: #F0ACEB;
+    font-size: 18px;
+    padding: 10px;
+}
+QPushButton:hover {
+    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #D34BED, stop:1 #67004D);
+    border-color: #67004D;
+}
+QPushButton:pressed {
+    background-color: #5F006E;
+    border-color: #5F006E;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Z2">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>400</y>
+      <width>200</width>
+      <height>200</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #DA48F0, stop:1 #5F006E);
+    border-style: solid;
+    border-width: 2px;
+    border-color: #5F006E;
+    border-radius: 10px;
+    color: #F0ACEB;
+    font-size: 18px;
+    padding: 10px;
+}
+QPushButton:hover {
+    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #D34BED, stop:1 #67004D);
+    border-color: #67004D;
+}
+QPushButton:pressed {
+    background-color: #5F006E;
+    border-color: #5F006E;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Z3">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>400</y>
+      <width>200</width>
+      <height>200</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #DA48F0, stop:1 #5F006E);
+    border-style: solid;
+    border-width: 2px;
+    border-color: #5F006E;
+    border-radius: 10px;
+    color: #F0ACEB;
+    font-size: 18px;
+    padding: 10px;
+}
+QPushButton:hover {
+    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #D34BED, stop:1 #67004D);
+    border-color: #67004D;
+}
+QPushButton:pressed {
+    background-color: #5F006E;
+    border-color: #5F006E;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QFrame" name="frame">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>600</width>
+      <height>600</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #F04894
+</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+   </widget>
+   <zorder>frame</zorder>
+   <zorder>X1</zorder>
+   <zorder>X2</zorder>
+   <zorder>X3</zorder>
+   <zorder>Y1</zorder>
+   <zorder>Y2</zorder>
+   <zorder>Y3</zorder>
+   <zorder>Z1</zorder>
+   <zorder>Z2</zorder>
+   <zorder>Z3</zorder>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
