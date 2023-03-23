@@ -38,6 +38,7 @@ class TikTakToe(QtWidgets.QMainWindow):
         else:
             self.ui.X1.setText('O')
             clicks += 1
+        self.ui.X1.setEnabled(False)
     def X2(self):
         global clicks
         if clicks % 2 == 1:
@@ -46,6 +47,7 @@ class TikTakToe(QtWidgets.QMainWindow):
         else:
             self.ui.X2.setText('O')
             clicks += 1
+        self.ui.X2.setEnabled(False)
     def X3(self):
         global clicks
         if clicks % 2 == 1:
@@ -54,6 +56,7 @@ class TikTakToe(QtWidgets.QMainWindow):
         else:
             self.ui.X3.setText('O')
             clicks += 1
+        self.ui.X3.setEnabled(False)
     def Y1(self):
         global clicks
         if clicks % 2 == 1:
@@ -62,6 +65,7 @@ class TikTakToe(QtWidgets.QMainWindow):
         else:
             self.ui.Y1.setText('O')
             clicks += 1
+        self.ui.Y1.setEnabled(False)
     def Y2(self):
         global clicks
         if clicks % 2 == 1:
@@ -70,6 +74,7 @@ class TikTakToe(QtWidgets.QMainWindow):
         else:
             self.ui.Y2.setText('O')
             clicks += 1
+        self.ui.Y2.setEnabled(False)
     def Y3(self):
         global clicks
         if clicks % 2 == 1:
@@ -78,6 +83,7 @@ class TikTakToe(QtWidgets.QMainWindow):
         else:
             self.ui.Y3.setText('O')
             clicks += 1
+        self.ui.Y3.setEnabled(False)
     def Z1(self):
         global clicks
         if clicks % 2 == 1:
@@ -86,6 +92,7 @@ class TikTakToe(QtWidgets.QMainWindow):
         else:
             self.ui.Z1.setText('O')
             clicks += 1
+        self.ui.Z1.setEnabled(False)
     def Z2(self):
         global clicks
         if clicks % 2 == 1:
@@ -94,6 +101,7 @@ class TikTakToe(QtWidgets.QMainWindow):
         else:
             self.ui.Z2.setText('O')
             clicks += 1
+        self.ui.Z2.setEnabled(False)
     def Z3(self):
         global clicks
         if clicks % 2 == 1:
@@ -102,6 +110,7 @@ class TikTakToe(QtWidgets.QMainWindow):
         else:
             self.ui.Z3.setText('O')
             clicks += 1
+        self.ui.Z3.setEnabled(False)
             
 
 
