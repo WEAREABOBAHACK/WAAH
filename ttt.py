@@ -2,9 +2,14 @@ import sys
 from PyQt5 import QtWidgets
 from PyQt5.QtGui import QIcon
 from ui import Ui_MainWindow 
-clicks = 0
+clicks = 1
 
 class TikTakToe(QtWidgets.QMainWindow):
+    def ex(self):
+        global clicks
+        if clicks >= 2:
+            exit
+
     def __init__(self):
         super(TikTakToe, self).__init__()
         self.ui = Ui_MainWindow()
@@ -21,35 +26,89 @@ class TikTakToe(QtWidgets.QMainWindow):
         self.init_ui()
 
 
-
     def init_ui(self):
         self.setWindowTitle('Крестики Нолики')
         self.setWindowIcon(QIcon('icon.png'))
 
     def X1(self):
-        self.ui.X1.setText('X')
+        global clicks
+        if clicks % 2 == 1:
+            self.ui.X1.setText('X')
+            clicks += 1
+        else:
+            self.ui.X1.setText('O')
+            clicks += 1
     def X2(self):
-        self.ui.X2.setText('X')
+        global clicks
+        if clicks % 2 == 1:
+            self.ui.X2.setText('X')
+            clicks += 1
+        else:
+            self.ui.X2.setText('O')
+            clicks += 1
     def X3(self):
-        self.ui.X3.setText('X')
+        global clicks
+        if clicks % 2 == 1:
+            self.ui.X3.setText('X')
+            clicks += 1
+        else:
+            self.ui.X3.setText('O')
+            clicks += 1
     def Y1(self):
-        self.ui.Y1.setText('X')
+        global clicks
+        if clicks % 2 == 1:
+            self.ui.Y1.setText('X')
+            clicks += 1
+        else:
+            self.ui.Y1.setText('O')
+            clicks += 1
     def Y2(self):
-        self.ui.Y2.setText('X')
+        global clicks
+        if clicks % 2 == 1:
+            self.ui.Y2.setText('X')
+            clicks += 1
+        else:
+            self.ui.Y2.setText('O')
+            clicks += 1
     def Y3(self):
-        self.ui.Y3.setText('X')
+        global clicks
+        if clicks % 2 == 1:
+            self.ui.Y3.setText('X')
+            clicks += 1
+        else:
+            self.ui.Y3.setText('O')
+            clicks += 1
     def Z1(self):
-        self.ui.Z1.setText('X')
+        global clicks
+        if clicks % 2 == 1:
+            self.ui.Z1.setText('X')
+            clicks += 1
+        else:
+            self.ui.Z1.setText('O')
+            clicks += 1
     def Z2(self):
-        self.ui.Z2.setText('X')
+        global clicks
+        if clicks % 2 == 1:
+            self.ui.Z2.setText('X')
+            clicks += 1
+        else:
+            self.ui.Z2.setText('O')
+            clicks += 1
     def Z3(self):
-        self.ui.Z3.setText('X')
+        global clicks
+        if clicks % 2 == 1:
+            self.ui.Z3.setText('X')
+            clicks += 1
+        else:
+            self.ui.Z3.setText('O')
+            clicks += 1
+            
 
 
 
 app = QtWidgets.QApplication([])
 application = TikTakToe()
 application.show()
+
+
 sys.exit(app.exec())
-
-
