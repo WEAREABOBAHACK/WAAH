@@ -11,28 +11,48 @@ class Notes(QtWidgets.QMainWindow):
         self.ui = Ui_MainWindow()
         self.ui.setupUi(self)
         self.init_ui()
-        self.ui.pushButton.clicked.connect(self.save1)
-        self.ui.pushButton_2.clicked.connect(self.save2)
-        self.ui.pushButton_3.clicked.connect(self.save3)
-
-
-
+        self.ui.b_save.clicked.connect(self.save)
+        self.ui.b_refresh.clicked.connect(self.opensave)
     def init_ui(self):
         self.setWindowTitle('NoTes!')
+        self.setWindowIcon(QIcon('Iconnote.png'))
         self.ui.text1.setPlaceholderText('Note 1')
         self.ui.text2.setPlaceholderText('Note 2')
         self.ui.text3.setPlaceholderText('Note 3')
 
-    def save1(self):
+    def save(self):
         self.text1 = self.ui.text1.toPlainText()
         self.ui.text1.setPlaceholderText(self.text1)
-
-    def save2(self):
+        file = open("Note1.txt", "w+")
+        file.write(self.text1)
+        file.close()
         self.text2 = self.ui.text2.toPlainText()
         self.ui.text2.setPlaceholderText(self.text2)
-    def save3(self):
+        file = open("Note2.txt", "w+")
+        file.write(self.text2)
+        file.close()
         self.text3 = self.ui.text3.toPlainText()
         self.ui.text3.setPlaceholderText(self.text3)
+        file = open("Note3.txt", "w+")
+        file.write(self.text3)
+        file.close()
+
+    def opensave(self):
+        self.file = open("Note1.txt", "r")
+        self.ui.text1.setText(*self.file)
+        self.file.close()
+
+
+        self.file = open("Note2.txt", "r")
+        self.ui.text2.setText(*self.file)
+        self.file.close()
+
+
+        self.file = open("Note3.txt", "r+")
+        self.ui.text3.setText(*self.file)
+        self.file.close()
+
+
 
 app = QtWidgets.QApplication([])
 application = Notes()

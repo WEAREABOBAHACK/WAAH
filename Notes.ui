@@ -58,30 +58,43 @@ p, li { white-space: pre-wrap; }
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
      </property>
     </widget>
-    <widget class="QPushButton" name="pushButton">
+    <widget class="QPushButton" name="b_refresh">
      <property name="geometry">
       <rect>
-       <x>150</x>
-       <y>550</y>
-       <width>90</width>
-       <height>35</height>
+       <x>10</x>
+       <y>540</y>
+       <width>51</width>
+       <height>51</height>
       </rect>
      </property>
      <property name="styleSheet">
       <string notr="true">QPushButton {
-    background-color: qlineargradient(x1:0, y1:0, x2:1, y2:1, stop:0 #283040, stop:1 #405173);
-    border-radius: 15px;
+	background-color:#B9B4D9;
+	border-radius: 12px;
     color: white;
+	background-image: url();
     padding: 10px 20px;
-    font-size: 18px;
-    font-weight: bold;
 }
 QPushButton:hover {
     background-color: qlineargradient(x1:0, y1:0, x2:1, y2:1, stop:0 #405173, stop:1 #283040);
-}</string>
+}
+QPushButton:pressed {
+    background-color: qlineargradient(x1:0, y1:0, x2:1, y2:1, stop:0 #283040, stop:1 #405173);
+    border-radius: 12px;
+    color: white;
+	background-image: url();
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+}
+</string>
      </property>
      <property name="text">
-      <string>Save</string>
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>free-icon-font-refresh-3917766.png</normaloff>free-icon-font-refresh-3917766.png</iconset>
      </property>
     </widget>
    </widget>
@@ -129,32 +142,6 @@ p, li { white-space: pre-wrap; }
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
      </property>
     </widget>
-    <widget class="QPushButton" name="pushButton_2">
-     <property name="geometry">
-      <rect>
-       <x>150</x>
-       <y>550</y>
-       <width>90</width>
-       <height>35</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">QPushButton {
-    background-color: qlineargradient(x1:0, y1:0, x2:1, y2:1, stop:0 #283040, stop:1 #405173);
-    border-radius: 15px;
-    color: white;
-    padding: 10px 20px;
-    font-size: 18px;
-    font-weight: bold;
-}
-QPushButton:hover {
-    background-color: qlineargradient(x1:0, y1:0, x2:1, y2:1, stop:0 #405173, stop:1 #283040);
-}</string>
-     </property>
-     <property name="text">
-      <string>Save</string>
-     </property>
-    </widget>
    </widget>
    <widget class="QFrame" name="frame_3">
     <property name="geometry">
@@ -188,7 +175,7 @@ QPushButton:hover {
      </property>
      <property name="font">
       <font>
-       <family>RomanS</family>
+       <family>RomanD</family>
        <pointsize>18</pointsize>
       </font>
      </property>
@@ -199,34 +186,47 @@ QPushButton:hover {
       <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'RomanS'; font-size:18pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'RomanD'; font-size:18pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'RomanS';&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
      </property>
     </widget>
-    <widget class="QPushButton" name="pushButton_3">
+    <widget class="QPushButton" name="b_save">
      <property name="geometry">
       <rect>
-       <x>150</x>
-       <y>550</y>
-       <width>90</width>
-       <height>35</height>
+       <x>340</x>
+       <y>540</y>
+       <width>51</width>
+       <height>51</height>
       </rect>
      </property>
      <property name="styleSheet">
       <string notr="true">QPushButton {
-    background-color: qlineargradient(x1:0, y1:0, x2:1, y2:1, stop:0 #283040, stop:1 #405173);
-    border-radius: 15px;
+	background-color:#B9B4D9;
+	border-radius: 12px;
     color: white;
+	background-image: url();
     padding: 10px 20px;
-    font-size: 18px;
-    font-weight: bold;
 }
 QPushButton:hover {
     background-color: qlineargradient(x1:0, y1:0, x2:1, y2:1, stop:0 #405173, stop:1 #283040);
-}</string>
+}
+QPushButton:pressed {
+    background-color: qlineargradient(x1:0, y1:0, x2:1, y2:1, stop:0 #283040, stop:1 #405173);
+    border-radius: 12px;
+    color: white;
+	background-image: url();
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+}
+</string>
      </property>
      <property name="text">
-      <string>Save</string>
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>free-icon-font-add-document-3914295.png</normaloff>free-icon-font-add-document-3914295.png</iconset>
      </property>
     </widget>
    </widget>

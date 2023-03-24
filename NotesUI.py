@@ -31,20 +31,33 @@ class Ui_MainWindow(object):
         self.text1.setFont(font)
         self.text1.setStyleSheet("color: #B9B4D9")
         self.text1.setObjectName("text1")
-        self.pushButton = QtWidgets.QPushButton(self.frame)
-        self.pushButton.setGeometry(QtCore.QRect(150, 550, 90, 35))
-        self.pushButton.setStyleSheet("QPushButton {\n"
-"    background-color: qlineargradient(x1:0, y1:0, x2:1, y2:1, stop:0 #283040, stop:1 #405173);\n"
-"    border-radius: 15px;\n"
+        self.b_refresh = QtWidgets.QPushButton(self.frame)
+        self.b_refresh.setGeometry(QtCore.QRect(10, 540, 51, 51))
+        self.b_refresh.setStyleSheet("QPushButton {\n"
+"    background-color:#B9B4D9;\n"
+"    border-radius: 12px;\n"
 "    color: white;\n"
+"    background-image: url();\n"
 "    padding: 10px 20px;\n"
-"    font-size: 18px;\n"
-"    font-weight: bold;\n"
 "}\n"
 "QPushButton:hover {\n"
 "    background-color: qlineargradient(x1:0, y1:0, x2:1, y2:1, stop:0 #405173, stop:1 #283040);\n"
-"}")
-        self.pushButton.setObjectName("pushButton")
+"}\n"
+"QPushButton:pressed {\n"
+"    background-color: qlineargradient(x1:0, y1:0, x2:1, y2:1, stop:0 #283040, stop:1 #405173);\n"
+"    border-radius: 12px;\n"
+"    color: white;\n"
+"    background-image: url();\n"
+"    padding: 10px 20px;\n"
+"    font-size: 16px;\n"
+"    font-weight: bold;\n"
+"}\n"
+"")
+        self.b_refresh.setText("")
+        icon = QtGui.QIcon()
+        icon.addPixmap(QtGui.QPixmap("free-icon-font-refresh-3917766.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.b_refresh.setIcon(icon)
+        self.b_refresh.setObjectName("b_refresh")
         self.frame_2 = QtWidgets.QFrame(self.centralwidget)
         self.frame_2.setGeometry(QtCore.QRect(400, 0, 400, 600))
         self.frame_2.setStyleSheet("background-color: #283040")
@@ -59,20 +72,6 @@ class Ui_MainWindow(object):
         self.text2.setFont(font)
         self.text2.setStyleSheet("color: #B9B4D9")
         self.text2.setObjectName("text2")
-        self.pushButton_2 = QtWidgets.QPushButton(self.frame_2)
-        self.pushButton_2.setGeometry(QtCore.QRect(150, 550, 90, 35))
-        self.pushButton_2.setStyleSheet("QPushButton {\n"
-"    background-color: qlineargradient(x1:0, y1:0, x2:1, y2:1, stop:0 #283040, stop:1 #405173);\n"
-"    border-radius: 15px;\n"
-"    color: white;\n"
-"    padding: 10px 20px;\n"
-"    font-size: 18px;\n"
-"    font-weight: bold;\n"
-"}\n"
-"QPushButton:hover {\n"
-"    background-color: qlineargradient(x1:0, y1:0, x2:1, y2:1, stop:0 #405173, stop:1 #283040);\n"
-"}")
-        self.pushButton_2.setObjectName("pushButton_2")
         self.frame_3 = QtWidgets.QFrame(self.centralwidget)
         self.frame_3.setGeometry(QtCore.QRect(800, 0, 400, 600))
         self.frame_3.setStyleSheet("background-color: #405173;\n"
@@ -85,25 +84,38 @@ class Ui_MainWindow(object):
         self.text3 = QtWidgets.QTextEdit(self.frame_3)
         self.text3.setGeometry(QtCore.QRect(0, 0, 400, 600))
         font = QtGui.QFont()
-        font.setFamily("RomanS")
+        font.setFamily("RomanD")
         font.setPointSize(18)
         self.text3.setFont(font)
         self.text3.setStyleSheet("color: #B9B4D9")
         self.text3.setObjectName("text3")
-        self.pushButton_3 = QtWidgets.QPushButton(self.frame_3)
-        self.pushButton_3.setGeometry(QtCore.QRect(150, 550, 90, 35))
-        self.pushButton_3.setStyleSheet("QPushButton {\n"
-"    background-color: qlineargradient(x1:0, y1:0, x2:1, y2:1, stop:0 #283040, stop:1 #405173);\n"
-"    border-radius: 15px;\n"
+        self.b_save = QtWidgets.QPushButton(self.frame_3)
+        self.b_save.setGeometry(QtCore.QRect(340, 540, 51, 51))
+        self.b_save.setStyleSheet("QPushButton {\n"
+"    background-color:#B9B4D9;\n"
+"    border-radius: 12px;\n"
 "    color: white;\n"
+"    background-image: url();\n"
 "    padding: 10px 20px;\n"
-"    font-size: 18px;\n"
-"    font-weight: bold;\n"
 "}\n"
 "QPushButton:hover {\n"
 "    background-color: qlineargradient(x1:0, y1:0, x2:1, y2:1, stop:0 #405173, stop:1 #283040);\n"
-"}")
-        self.pushButton_3.setObjectName("pushButton_3")
+"}\n"
+"QPushButton:pressed {\n"
+"    background-color: qlineargradient(x1:0, y1:0, x2:1, y2:1, stop:0 #283040, stop:1 #405173);\n"
+"    border-radius: 12px;\n"
+"    color: white;\n"
+"    background-image: url();\n"
+"    padding: 10px 20px;\n"
+"    font-size: 16px;\n"
+"    font-weight: bold;\n"
+"}\n"
+"")
+        self.b_save.setText("")
+        icon1 = QtGui.QIcon()
+        icon1.addPixmap(QtGui.QPixmap("free-icon-font-add-document-3914295.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.b_save.setIcon(icon1)
+        self.b_save.setObjectName("b_save")
         MainWindow.setCentralWidget(self.centralwidget)
 
         self.retranslateUi(MainWindow)
@@ -117,16 +129,13 @@ class Ui_MainWindow(object):
 "p, li { white-space: pre-wrap; }\n"
 "</style></head><body style=\" font-family:\'RomanD\'; font-size:18pt; font-weight:400; font-style:normal;\">\n"
 "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p></body></html>"))
-        self.pushButton.setText(_translate("MainWindow", "Save"))
         self.text2.setHtml(_translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
 "</style></head><body style=\" font-family:\'RomanD\'; font-size:18pt; font-weight:400; font-style:normal;\">\n"
 "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p></body></html>"))
-        self.pushButton_2.setText(_translate("MainWindow", "Save"))
         self.text3.setHtml(_translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
 "</style></head><body style=\" font-family:\'RomanD\'; font-size:18pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p></body></html>"))
-        self.pushButton_3.setText(_translate("MainWindow", "Save"))
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:\'RomanD\';\"><br /></p></body></html>"))
