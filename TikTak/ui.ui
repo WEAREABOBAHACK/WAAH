@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>600</width>
+    <width>750</width>
     <height>600</height>
    </rect>
   </property>
@@ -436,9 +436,12 @@ QPushButton:pressed {
      <rect>
       <x>0</x>
       <y>0</y>
-      <width>600</width>
+      <width>751</width>
       <height>600</height>
      </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>ArrowCursor</cursorShape>
     </property>
     <property name="styleSheet">
      <string notr="true">background-color: #5D75A6
@@ -450,6 +453,79 @@ QPushButton:pressed {
     <property name="frameShadow">
      <enum>QFrame::Raised</enum>
     </property>
+    <widget class="QPushButton" name="b_restart">
+     <property name="geometry">
+      <rect>
+       <x>630</x>
+       <y>40</y>
+       <width>81</width>
+       <height>521</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="font">
+      <font>
+       <family>Base 05</family>
+       <pointsize>-1</pointsize>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+       <underline>false</underline>
+       <strikeout>false</strikeout>
+       <stylestrategy>PreferDefault</stylestrategy>
+       <kerning>true</kerning>
+      </font>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="toolTip">
+      <string/>
+     </property>
+     <property name="layoutDirection">
+      <enum>Qt::LeftToRight</enum>
+     </property>
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: qlineargradient(spread:pad, x1:0.5, y1:0.5, x2:0, y2:1, stop:0 #1A1E26, stop:1 #5D75A6);
+    border-style: solid;
+    border-width: 2px;
+    border-color: #5D75A6;
+    border-radius: 10px;
+    color: #F0ACEB;
+    font-size: 60px;
+    padding: 10px;
+}
+QPushButton:hover {
+	background-color: #5D75A6;
+    border-color: #283040;
+}
+QPushButton:pressed {
+	background-color: #283040;
+    border-color: #5F006E;
+}</string>
+     </property>
+     <property name="text">
+      <string>R
+e
+s
+t
+a
+r
+t</string>
+     </property>
+     <property name="checkable">
+      <bool>false</bool>
+     </property>
+    </widget>
    </widget>
    <zorder>frame</zorder>
    <zorder>X1</zorder>

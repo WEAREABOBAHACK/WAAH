@@ -14,7 +14,7 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(600, 600)
+        MainWindow.resize(750, 600)
         MainWindow.setStyleSheet("")
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setStyleSheet("")
@@ -274,12 +274,55 @@ class Ui_MainWindow(object):
         self.Z3.setText("")
         self.Z3.setObjectName("Z3")
         self.frame = QtWidgets.QFrame(self.centralwidget)
-        self.frame.setGeometry(QtCore.QRect(0, 0, 600, 600))
+        self.frame.setGeometry(QtCore.QRect(0, 0, 751, 600))
+        self.frame.setCursor(QtGui.QCursor(QtCore.Qt.ArrowCursor))
         self.frame.setStyleSheet("background-color: #5D75A6\n"
 "")
         self.frame.setFrameShape(QtWidgets.QFrame.StyledPanel)
         self.frame.setFrameShadow(QtWidgets.QFrame.Raised)
         self.frame.setObjectName("frame")
+        self.b_restart = QtWidgets.QPushButton(self.frame)
+        self.b_restart.setGeometry(QtCore.QRect(630, 40, 81, 521))
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Fixed)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.b_restart.sizePolicy().hasHeightForWidth())
+        self.b_restart.setSizePolicy(sizePolicy)
+        font = QtGui.QFont()
+        font.setFamily("Base 05")
+        font.setPointSize(-1)
+        font.setBold(False)
+        font.setItalic(False)
+        font.setUnderline(False)
+        font.setWeight(50)
+        font.setStrikeOut(False)
+        font.setKerning(True)
+        font.setStyleStrategy(QtGui.QFont.PreferDefault)
+        self.b_restart.setFont(font)
+        self.b_restart.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.b_restart.setToolTip("")
+        self.b_restart.setLayoutDirection(QtCore.Qt.LeftToRight)
+        self.b_restart.setAutoFillBackground(False)
+        self.b_restart.setStyleSheet("QPushButton {\n"
+"    background-color: qlineargradient(spread:pad, x1:0.5, y1:0.5, x2:0, y2:1, stop:0 #1A1E26, stop:1 #5D75A6);\n"
+"    border-style: solid;\n"
+"    border-width: 2px;\n"
+"    border-color: #5D75A6;\n"
+"    border-radius: 10px;\n"
+"    color: #F0ACEB;\n"
+"    font-size: 60px;\n"
+"    padding: 10px;\n"
+"}\n"
+"QPushButton:hover {\n"
+"    background-color: #5D75A6;\n"
+"    border-color: #283040;\n"
+"}\n"
+"QPushButton:pressed {\n"
+"    background-color: #283040;\n"
+"    border-color: #5F006E;\n"
+"}")
+        self.b_restart.setCheckable(False)
+        self.b_restart.setObjectName("b_restart")
         self.frame.raise_()
         self.X1.raise_()
         self.X2.raise_()
@@ -298,3 +341,10 @@ class Ui_MainWindow(object):
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
+        self.b_restart.setText(_translate("MainWindow", "R\n"
+"e\n"
+"s\n"
+"t\n"
+"a\n"
+"r\n"
+"t"))
