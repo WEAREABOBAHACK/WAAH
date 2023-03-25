@@ -39,20 +39,17 @@ class Notes(QtWidgets.QMainWindow):
         file.close()
 
     def opensave(self):
-        with open("Note1.txt", "r") as self.file:
-            for lines in self.file:
-                self.ui.text1.setText(lines, )
-            self.file.close()
+        with open("Note1.txt", "r") as file:
+            self.ui.text1.setText(file.read())
+            file.close()
 
-        with open("Note2.txt", "r") as self.file:
-            for line in self.file:
-                self.ui.text2.setText(line.strip())
-            self.file.close()
+        with open("Note2.txt", "r") as file:
+            self.ui.text2.setText(file.read())
+            file.close()
 
-        with open("Note3.txt", "r") as self.file:
-            for line in self.file:
-                self.ui.text3.setText(line.strip())
-            self.file.close()
+        with open("Note3.txt", "r") as file:
+            self.ui.text3.setText(file.read())
+            file.close()
 
 
 

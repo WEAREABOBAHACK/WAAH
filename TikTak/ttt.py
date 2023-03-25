@@ -8,7 +8,7 @@ class TikTakToe(QtWidgets.QMainWindow):
     global clicks
     def ex(self, clicks):
         if clicks == 10:
-            sys.exit()
+            continue
         elif self.ui.X1.text() == ('X') and self.ui.X2.text() == ('X') and self.ui.X3.text() == ('X') or self.ui.X1.text() == ('O') and self.ui.X2.text() == ('O') and self.ui.X3.text() == ('O'):
             sys.exit()
         elif self.ui.Y1.text() == ('X') and self.ui.Y2.text() == ('X') and self.ui.Y3.text() == ('X') or self.ui.Y1.text() == ('O') and self.ui.Y2.text() == ('O') and self.ui.Y3.text() == ('O'):
