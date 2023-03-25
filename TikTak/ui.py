@@ -21,24 +21,29 @@ class Ui_MainWindow(object):
         self.centralwidget.setObjectName("centralwidget")
         self.X1 = QtWidgets.QPushButton(self.centralwidget)
         self.X1.setGeometry(QtCore.QRect(0, 0, 200, 200))
+        font = QtGui.QFont()
+        font.setFamily("Base 05")
+        font.setPointSize(-1)
+        self.X1.setFont(font)
         self.X1.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
         self.X1.setMouseTracking(False)
+        self.X1.setToolTipDuration(1)
         self.X1.setStyleSheet("QPushButton {\n"
-"    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #26D4CB, stop:1 #26D469);\n"
+"    background-color: qlineargradient(spread:pad, x1:0.5, y1:0.5, x2:1, y2:1, stop:0 #1A1E26, stop:1 #5D75A6);\n"
 "    border-style: solid;\n"
 "    border-width: 2px;\n"
-"    border-color: #5F006E;\n"
+"    border-color: #5D75A6;\n"
 "    border-radius: 10px;\n"
 "    color: #F0ACEB;\n"
-"    font-size: 18px;\n"
+"    font-size: 60px;\n"
 "    padding: 10px;\n"
 "}\n"
 "QPushButton:hover {\n"
-"    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #26D469, stop:1 #26D4CB);\n"
-"    border-color: #67004D;\n"
+"    background-color: #5D75A6;\n"
+"    border-color: #283040;\n"
 "}\n"
 "QPushButton:pressed {\n"
-"    background-color: #26D4CB;\n"
+"    background-color: #283040;\n"
 "    border-color: #5F006E;\n"
 "}")
         self.X1.setText("")
@@ -46,193 +51,231 @@ class Ui_MainWindow(object):
         self.X2 = QtWidgets.QPushButton(self.centralwidget)
         self.X2.setGeometry(QtCore.QRect(200, 0, 200, 200))
         font = QtGui.QFont()
+        font.setFamily("Base 05")
         font.setPointSize(-1)
         self.X2.setFont(font)
         self.X2.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.X2.setToolTipDuration(1)
         self.X2.setStyleSheet("QPushButton {\n"
-"    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #26D4CB, stop:1 #26D469);\n"
+"    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #1A1E26, stop:1 #5D75A6);\n"
 "    border-style: solid;\n"
 "    border-width: 2px;\n"
-"    border-color: #5F006E;\n"
+"    border-color: #5D75A6;\n"
 "    border-radius: 10px;\n"
 "    color: #F0ACEB;\n"
-"    font-size: 18px;\n"
+"    font-size: 60px;\n"
 "    padding: 10px;\n"
 "}\n"
 "QPushButton:hover {\n"
-"    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #26D469, stop:1 #26D4CB);\n"
-"    border-color: #67004D;\n"
+"    background-color: #5D75A6;\n"
+"    border-color: #283040;\n"
 "}\n"
 "QPushButton:pressed {\n"
-"    background-color: #26D4CB;\n"
+"    background-color: #283040;\n"
 "    border-color: #5F006E;\n"
 "}")
         self.X2.setText("")
         self.X2.setObjectName("X2")
         self.X3 = QtWidgets.QPushButton(self.centralwidget)
         self.X3.setGeometry(QtCore.QRect(400, 0, 200, 200))
+        font = QtGui.QFont()
+        font.setFamily("Base 05")
+        font.setPointSize(-1)
+        self.X3.setFont(font)
         self.X3.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.X3.setToolTipDuration(1)
         self.X3.setStyleSheet("QPushButton {\n"
-"    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #26D4CB, stop:1 #26D469);\n"
+"    background-color: qlineargradient(spread:pad, x1:0.5, y1:0.5, x2:0, y2:1, stop:0 #1A1E26, stop:1 #5D75A6);\n"
 "    border-style: solid;\n"
 "    border-width: 2px;\n"
-"    border-color: #5F006E;\n"
+"    border-color: #5D75A6;\n"
 "    border-radius: 10px;\n"
 "    color: #F0ACEB;\n"
-"    font-size: 18px;\n"
+"    font-size: 60px;\n"
 "    padding: 10px;\n"
 "}\n"
 "QPushButton:hover {\n"
-"    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #26D469, stop:1 #26D4CB);\n"
-"    border-color: #67004D;\n"
+"    background-color: #5D75A6;\n"
+"    border-color: #283040;\n"
 "}\n"
 "QPushButton:pressed {\n"
-"    background-color: #26D4CB;\n"
+"    background-color: #283040;\n"
 "    border-color: #5F006E;\n"
 "}")
         self.X3.setText("")
         self.X3.setObjectName("X3")
         self.Y1 = QtWidgets.QPushButton(self.centralwidget)
         self.Y1.setGeometry(QtCore.QRect(0, 200, 200, 200))
+        font = QtGui.QFont()
+        font.setFamily("Base 05")
+        font.setPointSize(-1)
+        self.Y1.setFont(font)
         self.Y1.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.Y1.setToolTipDuration(1)
         self.Y1.setStyleSheet("QPushButton {\n"
-"    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #26D4CB, stop:1 #26D469);\n"
+"    background-color: qlineargradient(x0:1, y1:2, x2:1, y2:2, stop:0 #1A1E26, stop:1 #5D75A6);\n"
 "    border-style: solid;\n"
 "    border-width: 2px;\n"
-"    border-color: #5F006E;\n"
+"    border-color: #5D75A6;\n"
 "    border-radius: 10px;\n"
 "    color: #F0ACEB;\n"
-"    font-size: 18px;\n"
+"    font-size: 60px;\n"
 "    padding: 10px;\n"
 "}\n"
 "QPushButton:hover {\n"
-"    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #26D469, stop:1 #26D4CB);\n"
-"    border-color: #67004D;\n"
+"    background-color: #5D75A6;\n"
+"    border-color: #283040;\n"
 "}\n"
 "QPushButton:pressed {\n"
-"    background-color: #26D4CB;\n"
+"    background-color: #283040;\n"
 "    border-color: #5F006E;\n"
 "}")
         self.Y1.setText("")
         self.Y1.setObjectName("Y1")
         self.Y2 = QtWidgets.QPushButton(self.centralwidget)
         self.Y2.setGeometry(QtCore.QRect(200, 200, 200, 200))
+        font = QtGui.QFont()
+        font.setFamily("Base 05")
+        font.setPointSize(-1)
+        self.Y2.setFont(font)
         self.Y2.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.Y2.setToolTipDuration(1)
         self.Y2.setStyleSheet("QPushButton {\n"
-"    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #DA48F0, stop:1 #5F006E);\n"
+"    background-color: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.494, stop:0 #1A1E26 , stop:1 #5D75A6);\n"
 "    border-style: solid;\n"
 "    border-width: 2px;\n"
-"    border-color: #5F006E;\n"
+"    border-color: #5D75A6;\n"
 "    border-radius: 10px;\n"
 "    color: #F0ACEB;\n"
-"    font-size: 18px;\n"
+"    font-size: 60px;\n"
 "    padding: 10px;\n"
 "}\n"
 "QPushButton:hover {\n"
-"    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #D34BED, stop:1 #67004D);\n"
-"    border-color: #67004D;\n"
+"    background-color: #5D75A6;\n"
+"    border-color: #283040;\n"
 "}\n"
 "QPushButton:pressed {\n"
-"    background-color: #5F006E;\n"
+"    background-color: #283040;\n"
 "    border-color: #5F006E;\n"
 "}")
         self.Y2.setText("")
         self.Y2.setObjectName("Y2")
         self.Y3 = QtWidgets.QPushButton(self.centralwidget)
         self.Y3.setGeometry(QtCore.QRect(400, 200, 200, 200))
+        font = QtGui.QFont()
+        font.setFamily("Base 05")
+        font.setPointSize(-1)
+        self.Y3.setFont(font)
         self.Y3.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.Y3.setToolTipDuration(1)
         self.Y3.setStyleSheet("QPushButton {\n"
-"    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #26D4CB, stop:1 #26D469);\n"
+"    background-color: qlineargradient(x0 : 1, y0 : 1, x1 : 1, y0 : 1, stop:0 #1A1E26, stop:1 #5D75A6);\n"
 "    border-style: solid;\n"
 "    border-width: 2px;\n"
-"    border-color: #5F006E;\n"
+"    border-color: #5D75A6;\n"
 "    border-radius: 10px;\n"
 "    color: #F0ACEB;\n"
-"    font-size: 18px;\n"
+"    font-size: 60px;\n"
 "    padding: 10px;\n"
 "}\n"
 "QPushButton:hover {\n"
-"    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #26D469, stop:1 #26D4CB);\n"
-"    border-color: #67004D;\n"
+"    background-color: #5D75A6;\n"
+"    border-color: #283040;\n"
 "}\n"
 "QPushButton:pressed {\n"
-"    background-color: #26D4CB;\n"
+"    background-color: #283040;\n"
 "    border-color: #5F006E;\n"
 "}")
         self.Y3.setText("")
         self.Y3.setObjectName("Y3")
         self.Z1 = QtWidgets.QPushButton(self.centralwidget)
         self.Z1.setGeometry(QtCore.QRect(0, 400, 200, 200))
+        font = QtGui.QFont()
+        font.setFamily("Base 05")
+        font.setPointSize(-1)
+        self.Z1.setFont(font)
         self.Z1.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.Z1.setToolTipDuration(1)
         self.Z1.setStyleSheet("QPushButton {\n"
-"    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #26D4CB, stop:1 #26D469);\n"
+"    background-color: qlineargradient(spread:pad, x1:0.5, y1:0.5, x2:1, y2:0, stop:0 #1A1E26 , stop:1 #5D75A6);\n"
 "    border-style: solid;\n"
 "    border-width: 2px;\n"
-"    border-color: #5F006E;\n"
+"    border-color: #5D75A6;\n"
 "    border-radius: 10px;\n"
 "    color: #F0ACEB;\n"
-"    font-size: 18px;\n"
+"    font-size: 60px;\n"
 "    padding: 10px;\n"
 "}\n"
 "QPushButton:hover {\n"
-"    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #26D469, stop:1 #26D4CB);\n"
-"    border-color: #67004D;\n"
+"    background-color: #5D75A6;\n"
+"    border-color: #283040;\n"
 "}\n"
 "QPushButton:pressed {\n"
-"    background-color: #26D4CB;\n"
+"    background-color: #283040;\n"
 "    border-color: #5F006E;\n"
 "}")
         self.Z1.setText("")
         self.Z1.setObjectName("Z1")
         self.Z2 = QtWidgets.QPushButton(self.centralwidget)
         self.Z2.setGeometry(QtCore.QRect(200, 400, 200, 200))
+        font = QtGui.QFont()
+        font.setFamily("Base 05")
+        font.setPointSize(-1)
+        self.Z2.setFont(font)
         self.Z2.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.Z2.setToolTipDuration(1)
         self.Z2.setStyleSheet("QPushButton {\n"
-"    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #26D4CB, stop:1 #26D469);\n"
+"    background-color: qlineargradient(x1:0, y1:1, x2:0, y2:0, stop:0 #1A1E26, stop:1 #5D75A6);\n"
 "    border-style: solid;\n"
 "    border-width: 2px;\n"
-"    border-color: #5F006E;\n"
+"    border-color: #5D75A6;\n"
 "    border-radius: 10px;\n"
 "    color: #F0ACEB;\n"
-"    font-size: 18px;\n"
+"    font-size: 60px;\n"
 "    padding: 10px;\n"
 "}\n"
 "QPushButton:hover {\n"
-"    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #26D469, stop:1 #26D4CB);\n"
-"    border-color: #67004D;\n"
+"    background-color: #5D75A6;\n"
+"    border-color: #283040;\n"
 "}\n"
 "QPushButton:pressed {\n"
-"    background-color: #26D4CB;\n"
+"    background-color: #283040;\n"
 "    border-color: #5F006E;\n"
 "}")
         self.Z2.setText("")
         self.Z2.setObjectName("Z2")
         self.Z3 = QtWidgets.QPushButton(self.centralwidget)
         self.Z3.setGeometry(QtCore.QRect(400, 400, 200, 200))
+        font = QtGui.QFont()
+        font.setFamily("Base 05")
+        font.setPointSize(-1)
+        self.Z3.setFont(font)
         self.Z3.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.Z3.setToolTipDuration(1)
+        self.Z3.setAutoFillBackground(False)
         self.Z3.setStyleSheet("QPushButton {\n"
-"    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #26D4CB, stop:1 #26D469);\n"
+"    background-color: qlineargradient(spread:pad, x1:0.5, y1:0.5, x2:0, y2:0, stop:0 #1A1E26, stop:1 #5D75A6 );\n"
 "    border-style: solid;\n"
 "    border-width: 2px;\n"
-"    border-color: #5F006E;\n"
+"    border-color: #5D75A6;\n"
 "    border-radius: 10px;\n"
 "    color: #F0ACEB;\n"
-"    font-size: 18px;\n"
+"    font-size: 60px;\n"
 "    padding: 10px;\n"
 "}\n"
 "QPushButton:hover {\n"
-"    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #26D469, stop:1 #26D4CB);\n"
-"    border-color: #67004D;\n"
+"    background-color: #5D75A6;\n"
+"    border-color: #283040;\n"
 "}\n"
 "QPushButton:pressed {\n"
-"    background-color: #26D4CB;\n"
+"    background-color: #283040;\n"
 "    border-color: #5F006E;\n"
 "}")
         self.Z3.setText("")
         self.Z3.setObjectName("Z3")
         self.frame = QtWidgets.QFrame(self.centralwidget)
         self.frame.setGeometry(QtCore.QRect(0, 0, 600, 600))
-        self.frame.setStyleSheet("background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #26D4CB, stop:1 #26D469);\n"
+        self.frame.setStyleSheet("background-color: #5D75A6\n"
 "")
         self.frame.setFrameShape(QtWidgets.QFrame.StyledPanel)
         self.frame.setFrameShadow(QtWidgets.QFrame.Raised)

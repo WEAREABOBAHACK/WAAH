@@ -29,29 +29,38 @@
       <height>200</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <family>Base 05</family>
+      <pointsize>-1</pointsize>
+     </font>
+    </property>
     <property name="cursor">
      <cursorShape>PointingHandCursor</cursorShape>
     </property>
     <property name="mouseTracking">
      <bool>false</bool>
     </property>
+    <property name="toolTipDuration">
+     <number>1</number>
+    </property>
     <property name="styleSheet">
      <string notr="true">QPushButton {
-    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #26D4CB, stop:1 #26D469);
+    background-color: qlineargradient(spread:pad, x1:0.5, y1:0.5, x2:1, y2:1, stop:0 #1A1E26, stop:1 #5D75A6);
     border-style: solid;
     border-width: 2px;
-    border-color: #5F006E;
+    border-color: #5D75A6;
     border-radius: 10px;
     color: #F0ACEB;
-    font-size: 18px;
+    font-size: 60px;
     padding: 10px;
 }
 QPushButton:hover {
-    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #26D469, stop:1 #26D4CB);
-    border-color: #67004D;
+	background-color: #5D75A6;
+    border-color: #283040;
 }
 QPushButton:pressed {
-    background-color: #26D4CB;
+	background-color: #283040;
     border-color: #5F006E;
 }</string>
     </property>
@@ -70,29 +79,33 @@ QPushButton:pressed {
     </property>
     <property name="font">
      <font>
+      <family>Base 05</family>
       <pointsize>-1</pointsize>
      </font>
     </property>
     <property name="cursor">
      <cursorShape>PointingHandCursor</cursorShape>
     </property>
+    <property name="toolTipDuration">
+     <number>1</number>
+    </property>
     <property name="styleSheet">
      <string notr="true">QPushButton {
-    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #26D4CB, stop:1 #26D469);
+    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #1A1E26, stop:1 #5D75A6);
     border-style: solid;
     border-width: 2px;
-    border-color: #5F006E;
+    border-color: #5D75A6;
     border-radius: 10px;
     color: #F0ACEB;
-    font-size: 18px;
+    font-size: 60px;
     padding: 10px;
 }
 QPushButton:hover {
-    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #26D469, stop:1 #26D4CB);
-    border-color: #67004D;
+	background-color: #5D75A6;
+    border-color: #283040;
 }
 QPushButton:pressed {
-    background-color: #26D4CB;
+	background-color: #283040;
     border-color: #5F006E;
 }</string>
     </property>
@@ -109,26 +122,35 @@ QPushButton:pressed {
       <height>200</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <family>Base 05</family>
+      <pointsize>-1</pointsize>
+     </font>
+    </property>
     <property name="cursor">
      <cursorShape>PointingHandCursor</cursorShape>
     </property>
+    <property name="toolTipDuration">
+     <number>1</number>
+    </property>
     <property name="styleSheet">
      <string notr="true">QPushButton {
-    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #26D4CB, stop:1 #26D469);
+    background-color: qlineargradient(spread:pad, x1:0.5, y1:0.5, x2:0, y2:1, stop:0 #1A1E26, stop:1 #5D75A6);
     border-style: solid;
     border-width: 2px;
-    border-color: #5F006E;
+    border-color: #5D75A6;
     border-radius: 10px;
     color: #F0ACEB;
-    font-size: 18px;
+    font-size: 60px;
     padding: 10px;
 }
 QPushButton:hover {
-    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #26D469, stop:1 #26D4CB);
-    border-color: #67004D;
+	background-color: #5D75A6;
+    border-color: #283040;
 }
 QPushButton:pressed {
-    background-color: #26D4CB;
+	background-color: #283040;
     border-color: #5F006E;
 }</string>
     </property>
@@ -145,26 +167,35 @@ QPushButton:pressed {
       <height>200</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <family>Base 05</family>
+      <pointsize>-1</pointsize>
+     </font>
+    </property>
     <property name="cursor">
      <cursorShape>PointingHandCursor</cursorShape>
     </property>
+    <property name="toolTipDuration">
+     <number>1</number>
+    </property>
     <property name="styleSheet">
      <string notr="true">QPushButton {
-    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #26D4CB, stop:1 #26D469);
+    background-color: qlineargradient(x0:1, y1:2, x2:1, y2:2, stop:0 #1A1E26, stop:1 #5D75A6);
     border-style: solid;
     border-width: 2px;
-    border-color: #5F006E;
+    border-color: #5D75A6;
     border-radius: 10px;
     color: #F0ACEB;
-    font-size: 18px;
+    font-size: 60px;
     padding: 10px;
 }
 QPushButton:hover {
-    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #26D469, stop:1 #26D4CB);
-    border-color: #67004D;
+	background-color: #5D75A6;
+    border-color: #283040;
 }
 QPushButton:pressed {
-    background-color: #26D4CB;
+	background-color: #283040;
     border-color: #5F006E;
 }</string>
     </property>
@@ -181,26 +212,35 @@ QPushButton:pressed {
       <height>200</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <family>Base 05</family>
+      <pointsize>-1</pointsize>
+     </font>
+    </property>
     <property name="cursor">
      <cursorShape>PointingHandCursor</cursorShape>
     </property>
+    <property name="toolTipDuration">
+     <number>1</number>
+    </property>
     <property name="styleSheet">
      <string notr="true">QPushButton {
-    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #DA48F0, stop:1 #5F006E);
+    background-color: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.494, stop:0 #1A1E26 , stop:1 #5D75A6);
     border-style: solid;
     border-width: 2px;
-    border-color: #5F006E;
+    border-color: #5D75A6;
     border-radius: 10px;
     color: #F0ACEB;
-    font-size: 18px;
+    font-size: 60px;
     padding: 10px;
 }
 QPushButton:hover {
-    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #D34BED, stop:1 #67004D);
-    border-color: #67004D;
+	background-color: #5D75A6;
+    border-color: #283040;
 }
 QPushButton:pressed {
-    background-color: #5F006E;
+	background-color: #283040;
     border-color: #5F006E;
 }</string>
     </property>
@@ -217,26 +257,35 @@ QPushButton:pressed {
       <height>200</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <family>Base 05</family>
+      <pointsize>-1</pointsize>
+     </font>
+    </property>
     <property name="cursor">
      <cursorShape>PointingHandCursor</cursorShape>
     </property>
+    <property name="toolTipDuration">
+     <number>1</number>
+    </property>
     <property name="styleSheet">
      <string notr="true">QPushButton {
-    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #26D4CB, stop:1 #26D469);
+    background-color: qlineargradient(x0 : 1, y0 : 1, x1 : 1, y0 : 1, stop:0 #1A1E26, stop:1 #5D75A6);
     border-style: solid;
     border-width: 2px;
-    border-color: #5F006E;
+    border-color: #5D75A6;
     border-radius: 10px;
     color: #F0ACEB;
-    font-size: 18px;
+    font-size: 60px;
     padding: 10px;
 }
 QPushButton:hover {
-    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #26D469, stop:1 #26D4CB);
-    border-color: #67004D;
+	background-color: #5D75A6;
+    border-color: #283040;
 }
 QPushButton:pressed {
-    background-color: #26D4CB;
+	background-color: #283040;
     border-color: #5F006E;
 }</string>
     </property>
@@ -253,26 +302,35 @@ QPushButton:pressed {
       <height>200</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <family>Base 05</family>
+      <pointsize>-1</pointsize>
+     </font>
+    </property>
     <property name="cursor">
      <cursorShape>PointingHandCursor</cursorShape>
     </property>
+    <property name="toolTipDuration">
+     <number>1</number>
+    </property>
     <property name="styleSheet">
      <string notr="true">QPushButton {
-    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #26D4CB, stop:1 #26D469);
+    background-color: qlineargradient(spread:pad, x1:0.5, y1:0.5, x2:1, y2:0, stop:0 #1A1E26 , stop:1 #5D75A6);
     border-style: solid;
     border-width: 2px;
-    border-color: #5F006E;
+    border-color: #5D75A6;
     border-radius: 10px;
     color: #F0ACEB;
-    font-size: 18px;
+    font-size: 60px;
     padding: 10px;
 }
 QPushButton:hover {
-    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #26D469, stop:1 #26D4CB);
-    border-color: #67004D;
+	background-color: #5D75A6;
+    border-color: #283040;
 }
 QPushButton:pressed {
-    background-color: #26D4CB;
+	background-color: #283040;
     border-color: #5F006E;
 }</string>
     </property>
@@ -289,26 +347,35 @@ QPushButton:pressed {
       <height>200</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <family>Base 05</family>
+      <pointsize>-1</pointsize>
+     </font>
+    </property>
     <property name="cursor">
      <cursorShape>PointingHandCursor</cursorShape>
     </property>
+    <property name="toolTipDuration">
+     <number>1</number>
+    </property>
     <property name="styleSheet">
      <string notr="true">QPushButton {
-    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #26D4CB, stop:1 #26D469);
+    background-color: qlineargradient(x1:0, y1:1, x2:0, y2:0, stop:0 #1A1E26, stop:1 #5D75A6);
     border-style: solid;
     border-width: 2px;
-    border-color: #5F006E;
+    border-color: #5D75A6;
     border-radius: 10px;
     color: #F0ACEB;
-    font-size: 18px;
+    font-size: 60px;
     padding: 10px;
 }
 QPushButton:hover {
-    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #26D469, stop:1 #26D4CB);
-    border-color: #67004D;
+	background-color: #5D75A6;
+    border-color: #283040;
 }
 QPushButton:pressed {
-    background-color: #26D4CB;
+	background-color: #283040;
     border-color: #5F006E;
 }</string>
     </property>
@@ -325,26 +392,38 @@ QPushButton:pressed {
       <height>200</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <family>Base 05</family>
+      <pointsize>-1</pointsize>
+     </font>
+    </property>
     <property name="cursor">
      <cursorShape>PointingHandCursor</cursorShape>
     </property>
+    <property name="toolTipDuration">
+     <number>1</number>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
     <property name="styleSheet">
      <string notr="true">QPushButton {
-    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #26D4CB, stop:1 #26D469);
+    background-color: qlineargradient(spread:pad, x1:0.5, y1:0.5, x2:0, y2:0, stop:0 #1A1E26, stop:1 #5D75A6 );
     border-style: solid;
     border-width: 2px;
-    border-color: #5F006E;
+    border-color: #5D75A6;
     border-radius: 10px;
     color: #F0ACEB;
-    font-size: 18px;
+    font-size: 60px;
     padding: 10px;
 }
 QPushButton:hover {
-    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #26D469, stop:1 #26D4CB);
-    border-color: #67004D;
+	background-color: #5D75A6;
+    border-color: #283040;
 }
 QPushButton:pressed {
-    background-color: #26D4CB;
+	background-color: #283040;
     border-color: #5F006E;
 }</string>
     </property>
@@ -362,7 +441,7 @@ QPushButton:pressed {
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #26D4CB, stop:1 #26D469);
+     <string notr="true">background-color: #5D75A6
 </string>
     </property>
     <property name="frameShape">
