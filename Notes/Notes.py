@@ -4,6 +4,8 @@ from PyQt5.QtGui import QIcon
 from NotesUI import Ui_MainWindow 
 
 class Notes(QtWidgets.QMainWindow):
+
+    
     def __init__(self):
         super(Notes, self).__init__()
         self.ui = Ui_MainWindow()
@@ -40,12 +42,16 @@ class Notes(QtWidgets.QMainWindow):
         with open("Note1.txt", "r") as file:
             self.ui.text1.setText(file.read())
             file.close()
+
         with open("Note2.txt", "r") as file:
             self.ui.text2.setText(file.read())
             file.close()
+
         with open("Note3.txt", "r") as file:
             self.ui.text3.setText(file.read())
             file.close()
+
+
 
 app = QtWidgets.QApplication([])
 application = Notes()
