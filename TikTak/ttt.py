@@ -6,25 +6,35 @@ clicks = 1
 
 class TikTakToe(QtWidgets.QMainWindow):
     global clicks
+    def kkk(self):
+        self.ui.X1.setEnabled(True)
+        self.ui.X2.setEnabled(True)
+        self.ui.X3.setEnabled(True)
+        self.ui.Y1.setEnabled(True)
+        self.ui.Y2.setEnabled(True)
+        self.ui.Y3.setEnabled(True)
+        self.ui.Z1.setEnabled(True)
+        self.ui.Z2.setEnabled(True)
+        self.ui.Z3.setEnabled(True)
     def ex(self, clicks):
         if clicks == 10:
-            continue
+            TikTakToe.restart(self)
         elif self.ui.X1.text() == ('X') and self.ui.X2.text() == ('X') and self.ui.X3.text() == ('X') or self.ui.X1.text() == ('O') and self.ui.X2.text() == ('O') and self.ui.X3.text() == ('O'):
-            sys.exit()
+            TikTakToe.restart(self)
         elif self.ui.Y1.text() == ('X') and self.ui.Y2.text() == ('X') and self.ui.Y3.text() == ('X') or self.ui.Y1.text() == ('O') and self.ui.Y2.text() == ('O') and self.ui.Y3.text() == ('O'):
-            sys.exit()
+            TikTakToe.restart(self)
         elif self.ui.Z1.text() == ('X') and self.ui.Z2.text() == ('X') and self.ui.Z3.text() == ('X') or self.ui.Z1.text() == ('O') and self.ui.Z2.text() == ('O') and self.ui.Z3.text() == ('O'):
-            sys.exit()
+            TikTakToe.restart(self)
         elif self.ui.X1.text() == ('X') and self.ui.Y1.text() == ('X') and self.ui.Z1.text() == ('X') or self.ui.X1.text() == ('O') and self.ui.Y1.text() == ('O') and self.ui.Z1.text() == ('O'):
-            sys.exit()
+            TikTakToe.restart(self)
         elif self.ui.X2.text() == ('X') and self.ui.Y2.text() == ('X') and self.ui.Z2.text() == ('X') or self.ui.X2.text() == ('O') and self.ui.Y2.text() == ('O') and self.ui.Z2.text() == ('O'):
-            sys.exit()
+            TikTakToe.restart(self)
         elif self.ui.X3.text() == ('X') and self.ui.Y3.text() == ('X') and self.ui.Z3.text() == ('X') or self.ui.X3.text() == ('O') and self.ui.Y3.text() == ('O') and self.ui.Z3.text() == ('O'):
-            sys.exit()
+            TikTakToe.restart(self)
         elif self.ui.X1.text() == ('X') and self.ui.Y2.text() == ('X') and self.ui.Z3.text() == ('X') or self.ui.X1.text() == ('O') and self.ui.Y2.text() == ('O') and self.ui.Z3.text() == ('O'):
-            sys.exit()
+            TikTakToe.restart(self)
         elif self.ui.X3.text() == ('X') and self.ui.Y2.text() == ('X') and self.ui.Z1.text() == ('X') or self.ui.X3.text() == ('O') and self.ui.Y2.text() == ('O') and self.ui.Z1.text() == ('O'):
-            sys.exit()
+            TikTakToe.restart(self)
     def __init__(self):
         super(TikTakToe, self).__init__()
         self.ui = Ui_MainWindow()
@@ -143,6 +153,31 @@ class TikTakToe(QtWidgets.QMainWindow):
             clicks += 1
             self.ex(clicks)
         self.ui.Z3.setEnabled(False)
+
+    def restart(self):
+        self.ui.X1.setEnabled(True)
+        self.ui.X2.setEnabled(True)
+        self.ui.X3.setEnabled(True)
+        self.ui.Y1.setEnabled(True)
+        self.ui.Y2.setEnabled(True)
+        self.ui.Y3.setEnabled(True)
+        self.ui.Z1.setEnabled(True)
+        self.ui.Z2.setEnabled(True)
+        self.ui.Z3.setEnabled(True)
+
+        self.ui.X1.setText('')
+        self.ui.X2.setText('')
+        self.ui.X3.setText('')
+        self.ui.Y1.setText('')
+        self.ui.Y2.setText('')
+        self.ui.Y3.setText('')
+        self.ui.Z1.setText('')
+        self.ui.Z2.setText('')
+        self.ui.Z3.setText('')
+        TikTakToe.kkk(self)
+        
+        
+        
 
 app = QtWidgets.QApplication([])
 application = TikTakToe()
