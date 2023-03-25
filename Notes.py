@@ -13,6 +13,7 @@ class Notes(QtWidgets.QMainWindow):
         self.init_ui()
         self.ui.b_save.clicked.connect(self.save)
         self.ui.b_refresh.clicked.connect(self.opensave)
+
     def init_ui(self):
         self.setWindowTitle('NoTes!')
         self.setWindowIcon(QIcon('Iconnote.png'))
@@ -38,19 +39,20 @@ class Notes(QtWidgets.QMainWindow):
         file.close()
 
     def opensave(self):
-        self.file = open("Note1.txt", "r")
-        self.ui.text1.setText(*self.file)
-        self.file.close()
+        with open("Note1.txt", "r") as self.file:
+            for lines in self.file:
+                self.ui.text1.setText(lines, )
+            self.file.close()
 
+        with open("Note2.txt", "r") as self.file:
+            for line in self.file:
+                self.ui.text2.setText(line.strip())
+            self.file.close()
 
-        self.file = open("Note2.txt", "r")
-        self.ui.text2.setText(*self.file)
-        self.file.close()
-
-
-        self.file = open("Note3.txt", "r+")
-        self.ui.text3.setText(*self.file)
-        self.file.close()
+        with open("Note3.txt", "r") as self.file:
+            for line in self.file:
+                self.ui.text3.setText(line.strip())
+            self.file.close()
 
 
 
